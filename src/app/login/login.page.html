@@ -1,0 +1,34 @@
+<ion-content>
+
+  <div class="container">
+
+    <p id="title">ForPup</p>
+    <div class="ion-text-end">
+      <p id="subtitle">Take Care of your Dog</p>
+    </div>
+
+    <ion-item color="transparent">
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input [(ngModel)]="user.email" type="email" (keypress)="eventHandler($event, 'email')"></ion-input>
+    </ion-item>
+    <span *ngIf="emailError">Please Enter Email</span>
+
+
+    <ion-item color="transparent">
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input [(ngModel)]="user.password" type="password" (keypress)="eventHandler($event, 'password')"></ion-input>
+    </ion-item>
+    <span *ngIf="passwordError">Please Enter Password</span>
+
+  
+    <div id="buttonWrapper" >
+      <ion-button shape="round" fill="outline" (click)="login()">Login</ion-button>
+    </div>
+  
+    <div class="ion-text-center">
+      <a routerLink='/signup'>Don't Have an Account?</a>
+    </div>
+
+  </div>
+  
+</ion-content>

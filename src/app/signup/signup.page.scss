@@ -1,0 +1,30 @@
+
+.container{
+    margin-top: 20px;
+    padding: 30px;
+}
+
+#title{
+    font-size: 20px;
+}
+
+.signUp{
+    margin-top: 40px;
+}
+
+.buttonWrapper{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+ion-button{
+    color: #ffffff;
+    width: 150px;
+    --background: linear-gradient(94.13deg, #BCDBFF 0%, rgba(255, 255, 255, 0) 100%), #E4B8FF;
+  }
+
+  span{
+    font-size: 12px;
+    color: rgb(112, 112, 112);
+  }

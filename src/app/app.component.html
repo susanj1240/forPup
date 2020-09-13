@@ -1,0 +1,33 @@
+<!-- Font Download-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+<ion-app>
+  <ion-menu side="start" menuId="m">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>ForPup</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item line="none" routerLink="/home">
+            <ion-icon name="home-outline" style="margin-right:10px"></ion-icon>
+            <ion-label>Home</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        
+        <ion-menu-toggle>
+          <ion-item line="none" (click)="onLogout()" button>
+            <ion-icon name="exit-outline" style="margin-right:10px"></ion-icon>
+            <ion-label>Logout</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+       
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet main></ion-router-outlet>
+</ion-app>

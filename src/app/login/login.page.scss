@@ -1,0 +1,53 @@
+ion-content {
+    z-index: -1;
+    // Picture taken by T.R Photography (Unsplash)
+    --background: url(../../assets/image/login.jpg) no-repeat center/cover fixed;
+  }
+
+  .container{
+      padding: 30px;   
+  }
+
+  #title{
+    color: #3f3f3f;
+    font-size: 40px;
+    margin: 5px;
+  }
+
+  #subtitle{
+    color: #3f3f3f;
+    font-size: 15px;
+    margin: 5px;
+  }
+
+  #buttonWrapper{
+    margin: 20px 0px 3px 0px;
+    display: flex;
+   justify-content: center;
+  }
+
+  ion-button{
+    color: #3f3f3f;
+    --border-color: #3f3f3f;
+    width: 150px;
+  }
+
+  a{
+    font-size: 12px;
+    color: #3f3f3f;
+    margin: 0px;
+  }
+  
+  a:hover{
+    color: #ffffff;
+
+  }
+
+  ion-item {
+    --highlight-color-focused: #858585;
+  }
+
+  span{
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+  }

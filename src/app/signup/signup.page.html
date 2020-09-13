@@ -1,0 +1,40 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+
+    <div id="title">
+      <p style="margin: 0px;"><b>Become</b></p>
+      <p style="margin: 0px;"><b>Pup-Mom & Pup-Dad Now!</b></p>
+    </div>
+
+
+    <div class="signUp">
+
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input [(ngModel)]="user.email" type="email" (keypress)="eventHandler($event, 'email')" ></ion-input>
+      </ion-item>
+      <span *ngIf="emailError">Please Enter Email</span>
+
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input [(ngModel)]="user.password" type="password" (keypress)="eventHandler($event, 'password')" ></ion-input>
+      </ion-item>
+      <span *ngIf="passwordError">Please Enter Password</span>
+
+      <div class="buttonWrapper">
+        <ion-button shape="round" (click)="signUp()">SignUp</ion-button>
+      </div>
+
+    </div>
+
+  </div>
+
+</ion-content>
