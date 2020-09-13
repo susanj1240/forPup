@@ -1,0 +1,7 @@
+{
+  "name": "forPup",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
